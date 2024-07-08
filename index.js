@@ -107,8 +107,8 @@ function renderWeatherInfo(weatherInfo) {
 const grantAccessButton = document.querySelector("[data-grantAccess]");
 grantAccessButton.addEventListener("click", getLocation);
 
-const searchInput = document.querySelector("[data-searchInput]"); // Corrected variable name
-searchForm.addEventListener("submit", (e) => { // Corrected the event listener to the form
+const searchInput = document.querySelector("[data-searchInput]"); 
+searchForm.addEventListener("submit", (e) => { 
     e.preventDefault();
     let cityName = searchInput.value;
     if (cityName === "") {
